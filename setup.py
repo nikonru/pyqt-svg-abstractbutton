@@ -21,6 +21,5 @@ setup(
     long_description=long_description,
     install_requires=[
         'PyQt5>=5.8',
-        'absresgetter'
     ]
 )

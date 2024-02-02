@@ -1,1 +1,1 @@
-absresgetter
+PyQt5>=5.8

@@ -1,6 +1,5 @@
 from PyQt5.QtGui import QColor, QPalette, qGray
 from PyQt5.QtWidgets import QAbstractButton, QGraphicsColorizeEffect, QWidget, qApp
-import absresgetter
 
 
 class SvgAbstractButton(QAbstractButton):
@@ -100,7 +99,7 @@ class SvgAbstractButton(QAbstractButton):
         self.setStyleSheet(self.__btn_style)
 
     def setIcon(self, icon: str):
-        self.__icon = absresgetter.getabsres(icon)
+        self.__icon = icon
         self.__styleInit()
 
     def eventFilter(self, obj, e):
